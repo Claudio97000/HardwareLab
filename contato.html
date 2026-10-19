@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardwareLab - Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header><h1>Contato</h1><p>Envie uma mensagem pelo WhatsApp</p></header>
+    <nav>
+        <a href="index.html">Início</a><a href="montagem.html">Componentes</a><a href="compatibilidade.html">Compatibilidade</a><a href="videos.html">Vídeos</a><a href="contato.html">Contato</a>
+    </nav>
+    <main>
+        <div class="caixa">
+            <h2>Formulário de contato</h2>
+            <p>Preencha os campos e clique no botão. O WhatsApp abrirá com a mensagem pronta para você revisar e enviar.</p>
+            <form id="form-whatsapp">
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Escolha um assunto</option>
+                    <option>Dúvida sobre componentes</option>
+                    <option>Dúvida sobre compatibilidade</option>
+                    <option>Sugestão para o site</option>
+                    <option>Outro assunto</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar pelo WhatsApp</button>
+                <p id="retorno" aria-live="polite"></p>
+            </form>
+        </div>
+    </main>
+    <footer><p>HardwareLab — Projeto acadêmico de programação web</p></footer>
+</body>
+</html>
