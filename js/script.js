@@ -1,6 +1,4 @@
-// Altere para o número que receberá as mensagens.
-// Formato: código do país + DDD + número, apenas dígitos.
-const numeroWhatsApp = "5500000000000";
+const numeroWhatsApp = "5581999393132";
 
 document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById("form-whatsapp");

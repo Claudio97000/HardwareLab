@@ -10,7 +10,11 @@
 <body>
     <header><h1>Contato</h1><p>Envie uma mensagem pelo WhatsApp</p></header>
     <nav>
-        <a href="index.html">Início</a><a href="montagem.html">Componentes</a><a href="compatibilidade.html">Compatibilidade</a><a href="videos.html">Vídeos</a><a href="contato.html">Contato</a>
+        <a href="index.html">Início</a>
+        <a href="montagem.html">Componentes</a>
+        <a href="compatibilidade.html">Compatibilidade</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="contato.html" class="demarca">Contato</a>
     </nav>
     <main>
         <div class="caixa">
@@ -33,10 +37,14 @@
                 <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
                 <button type="submit">Enviar pelo WhatsApp</button>
+                <p>Problemas com o WhatsApp? Veja a <a href="https://www.whatsapp.com/contact?lang=pt_br" target="_blank" rel="noopener noreferrer">página de suporte oficial</a>.</p>
                 <p id="retorno" aria-live="polite"></p>
             </form>
         </div>
     </main>
-    <footer><p>HardwareLab — Projeto acadêmico de programação web</p></footer>
+    <footer>
+        <p>HardwareLab — Projeto acadêmico de programação web</p>
+        <p class="creditos">Created by Abner, Claudio e Guilherme</p>
+    </footer>
 </body>
 </html>

@@ -1,6 +1,8 @@
-/* Um único arquivo CSS compartilhado pelas cinco páginas */
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     color: #203044;
     background: #f1f5f9;
@@ -14,11 +16,22 @@ header {
     padding: 25px 15px;
 }
 
-header h1 { margin: 0; }
-header p { margin-bottom: 0; }
+header h1 { 
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0; 
+}
+
+.demarca {
+    background: #38bdf8;
+    color: #000000;
+    font-weight: bold;
+}
 
 nav {
-    background: #16324f;
+    background: linear-gradient(120deg, #102a43, #0878b9);
     text-align: center;
     padding: 12px;
 }
@@ -37,7 +50,8 @@ nav a:hover {
 }
 
 main {
-    width: min(900px, 92%);
+    flex: 1;
+    width: min(1600px, 96%);
     margin: 25px auto;
 }
 
@@ -51,13 +65,51 @@ main {
 
 h2 { color: #12608a; }
 
-a { color: #086ca6; }
+a { color: #05659c; }
 
 .imagem-principal {
     width: 100%;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    margin: 18px 0;
+}
+
+.video {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    background: #f1f5f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.video span {
+    display: block;
+    padding: 10px 12px;
+    font-weight: bold;
+}
+
+.video {
+    transition: transform .2s, box-shadow .2s;
+}
+
+.video:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px #102a4322;
 }
 
 table {
@@ -116,7 +168,12 @@ footer {
     color: white;
 }
 
-@media (max-width: 600px) {
+.creditos {
+    color: #b6b9bd;
+    font-size: smaller;
+}
+
+@media (max-width: 800px) {
     nav a { margin: 3px; }
     .caixa { padding: 16px; }
     table { font-size: .9rem; }
