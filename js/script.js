@@ -17,11 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            if (numeroWhatsApp === "5500000000000") {
-                retorno.textContent = "O formulário está funcionando. Para enviar, altere o número de exemplo no arquivo js/script.js.";
-                return;
-            }
-
             const texto = `Olá! Meu nome é ${nome}. Assunto: ${assunto}. Mensagem: ${mensagem}`;
             const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
             window.open(url, "_blank", "noopener,noreferrer");
